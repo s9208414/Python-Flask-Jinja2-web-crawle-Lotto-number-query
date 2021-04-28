@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<p>
+    開出順序:
+    {% for i in range(0,6) %}
+    {{data3[i].text}} &nbsp
+    {% endfor %}
+</p>
+<p>
+    大小順序:
+    {% for i in range(6,data3|length) %}
+    {{data3[i].text}} &nbsp
+    {% endfor %}
+</p>
+<p>
+    特別號:
+    {{data2.text}}
+</p>
+
+
+</html>
